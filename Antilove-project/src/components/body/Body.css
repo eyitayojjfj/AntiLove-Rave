@@ -11,7 +11,7 @@ body {
   align-items: center;        /* Vertical center */
   justify-content: center;    /* Horizontal center */
 
-  background-color: #0a0a0a;  /* Dark background */
+  background-color: #261515;  /* Dark background */
   color: red;
 
   font-size: 4rem;            /* Big text */
@@ -109,4 +109,143 @@ body {
     letter-spacing: 0.12em;
   }
 }
+/* ---- Section styling ---- */
+.info-section {
+  background-color: #ffe6e6; /* very light red shade */
+  padding: 50px 20px;
+  padding-bottom: 90px;
+padding-top: 120px;}
+
+.section-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* makes it responsive */
+}
+
+.section-image img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.section-text {
+  max-width: 500px;
+  color: #990000; /* dark red for text */
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+}
+/* Fade-in animation keyframes */
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply to section elements */
+.section-image,
+.section-text {
+  opacity: 0; /* start invisible */
+  animation: fadeInSlide 1s ease forwards;
+}
+
+/* Delay the text slightly so it comes after the image */
+.section-text {
+  animation-delay: 0.5s;
+}
+
+/* Optional: smoother experience on load */
+.section-container {
+  overflow: hidden; /* prevents content from jumping during animation */
+}
+/* Subscribe section */
+.subscribe-section {
+  background-color: white;
+  padding: 60px 20px;
+}
+
+.subscribe-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* responsive */
+}
+
+.subscribe-text h2 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #990000; /* dark red */
+}
+
+.subscribe-text .highlight {
+  color: red; /* the "Now" */
+}
+
+.subscribe-text p {
+  font-size: 18px;
+  color: #990000;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.subscribe-form input {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.subscribe-form input:focus {
+  outline: none;
+  border-color: red;
+  box-shadow: 0 0 5px rgba(255,0,0,0.3);
+}
+
+.subscribe-form button {
+  padding: 12px;
+  font-size: 18px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subscribe-form button:hover {
+  background-color: darkred;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .subscribe-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .subscribe-text h2 {
+    font-size: 36px;
+  }
+}
+
 

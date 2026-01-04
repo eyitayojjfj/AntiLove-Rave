@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <nav className="navbar">
-      <div className="nav-logo">ANTILOVE RAVE</div>
+      <div className="nav-logo"> <img src="/images/logo.png" alt="Antilove Rave" /></div>
 
       <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
         <li>Home</li>

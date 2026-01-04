@@ -23,9 +23,20 @@
 
 /* Logo */
 .nav-logo {
-  font-size: 0.9rem;
-  font-weight: 800;
+  display: flex;
+  align-items: center;
+  height: 60px; /* navbar height */
+  padding: 0 20px; /* spacing from edges */
 }
+
+.nav-logo img {
+  height: 100%; /* fit the navbar height */
+  width: auto;  /* maintain aspect ratio */
+  object-fit: contain;
+  max-width: 200px; /* optional max width so it doesn't get too wide */
+  display: block;
+}
+
 
 /* Links */
 .nav-links {
