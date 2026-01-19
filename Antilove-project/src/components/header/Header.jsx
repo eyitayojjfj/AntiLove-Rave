@@ -3,6 +3,9 @@ import { IoMenu } from "react-icons/io5"
 import { useState } from "react"
 
 const Header = () => {
+   const handleGetTickets = () => {
+    window.location.href = "https://popouttickets.com/events/antilove"; // replace with your ticket link
+  };
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
@@ -11,7 +14,7 @@ const Header = () => {
 
       <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
         <li>Home</li>
-        <li>Tickets</li>
+        <li onClick={handleGetTickets}>Tickets</li>
         <li>Info</li>
       </ul>
 

@@ -1,12 +1,16 @@
 import './Body.css';
 
 const Body = () => {
+  const handleGetTickets = () => {
+    window.location.href = "https://popouttickets.com/events/antilove"; // replace with your ticket link
+  };
+
   return (
     <div>
      <div className="App">
       <div className="center-group">
         <div>ANTILOVE RAVE</div>
-        <button className="tickets-btn">GET TICKETS</button>
+        <button className="tickets-btn" onClick={handleGetTickets}>GET TICKETS</button>
       </div>
       </div>
         <section className="info-section">
