@@ -1,4 +1,6 @@
 import './Body.css';
+import { FaMapMarkerAlt, FaCalendarAlt, FaClock } from "react-icons/fa";
+
 
 const Body = () => {
   const handleGetTickets = () => {
@@ -18,16 +20,23 @@ const Body = () => {
           <div className="section-image">
             <img src="/images/antilove.jpeg" alt="Antilove Rave" />
           </div>
-          <div className="section-text">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-          </div>
+      <div className="section-text">
+  <div className="info-item">
+    <FaMapMarkerAlt className="icon" />
+    <span>The Vault Social House, Victoria Island, Lagos</span>
+  </div>
+
+  <div className="info-item">
+    <FaCalendarAlt className="icon" />
+    <span>Sun, Feb 22, 2026</span>
+  </div>
+
+  <div className="info-item">
+    <FaClock className="icon" />
+    <span>10PM – 4AM</span>
+  </div>
+</div>
+
         </div>
       </section>
      <section className="subscribe-section">
